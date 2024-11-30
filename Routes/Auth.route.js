@@ -7,7 +7,7 @@ const { authSchema } = require('../helpers/validation_schema')
 router.post('/register', async (req, res, next) => {
   console.log(req.body)
   try {
-    const { email, password } = req.body
+    //const { email, password } = req.body
     //if (!email || !password) throw createError.BadRequest()
 
     const result = await authSchema.validateAsync(req.body)
@@ -19,7 +19,7 @@ router.post('/register', async (req, res, next) => {
     const user = new User(result)
     const saveUser = await user.save()
 
-    res.send(saveUser)
+    res.send( saveUser )
 
 
   } catch (error) {
