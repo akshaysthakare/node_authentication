@@ -5,7 +5,7 @@ const User = require('../Models/User.model')
 const { authSchema } = require('../helpers/validation_schema')
 
 router.post('/register', async (req, res, next) => {
-  console.log(req.body)
+  // console.log(req.body)
   try {
     //const { email, password } = req.body
     //if (!email || !password) throw createError.BadRequest()

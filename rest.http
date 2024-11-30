@@ -6,8 +6,8 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-  "email": "dudhkawar2@gmail.com",
-  "password": "bhurshi"
+  "email": "akshay@gmail.com",
+  "password": "thakare"
 }
 
 ### login route ###
