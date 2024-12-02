@@ -10,9 +10,12 @@ The page will reload when you make changes.
 You may also see any lint errors in the console.
 
 Dependencies and Packages Used
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.2",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.7"
