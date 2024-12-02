@@ -6,12 +6,18 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-  "email": "aassskshaythakare@gmail.com",
-  "password": "thakare"
+  "email": "thakare1@gmail.com",
+  "password": "thakare1"
 }
 
 ### login route ###
 POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "thakare1@gmail.com",
+  "password": "thakare1"
+}
 
 ### Refresh-Token route ###
 POST http://localhost:3000/auth/refresh-token
