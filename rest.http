@@ -1,5 +1,5 @@
 GET http://localhost:3000/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzMyMTc0MDMsImV4cCI6MTczMzI3MTQwMywiYXVkIjoiNjc0ZDkzNDY2OGQyMDE1YzFlMWQ1NmYyIiwiaXNzIjoicGlja3VwLmNvbSJ9.i6O2Vzw9VHmQ3Adi1rGzq3xfAyHmw4jHb-4pfVD40bI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzMyMjEwNTQsImV4cCI6MTczMzIyMTA3OSwiYXVkIjoiNjc0ZDkzNDY2OGQyMDE1YzFlMWQ1NmYyIiwiaXNzIjoicGlja3VwLmNvbSJ9.ERY7TDGCtHleJ787TXQGWKbi9Y855bBkBPmMlGz_xC0
 
 
 ### Register route ###
@@ -22,6 +22,11 @@ Content-Type: application/json
 
 ### Refresh-Token route ###
 POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzMyMjEwMjUsImV4cCI6MTc2NDc3ODYyNSwiYXVkIjoiNjc0ZDkzNDY2OGQyMDE1YzFlMWQ1NmYyIiwiaXNzIjoicGlja3VwLmNvbSJ9.-ltZ3uCC-7Tmdj0Nm9saUL63a3uDdz-AN7Hlx0Z67rY"
+}
 
 ### logout route ###
 delete http://localhost:3000/auth/logout
