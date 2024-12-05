@@ -3,9 +3,12 @@ const morgan = require('morgan')
 const createError = require('http-errors')
 require('dotenv').config()
 require('./helpers/init_mogodb')
-const AuthRoute = require('./Routes/Auth.route')
+
 const { verifyAccessToken } = require('./helpers/jwt_helper')
 ///require('./helpers/init_mogodb')
+
+
+const AuthRoute = require('./Routes/Auth.route')
 
 const app = express()
 
