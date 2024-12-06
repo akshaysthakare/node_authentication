@@ -8,7 +8,7 @@ module.exports = {
       }
       const secret = process.env.ACCESS_TOKEN_SECRET;
       const options = {
-        expiresIn: '25s',
+        expiresIn: '1y',
         issuer: 'pickup.com',
         audience: userId,
       }
